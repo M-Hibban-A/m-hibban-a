@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bite Combat - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .welcome-section {
+            text-align: center;
+            padding: 45px 20px;
+            background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+            border-radius: 8px;
+            border-left: 5px solid #ff1e27;
+        }
+
+        .welcome-section h1 {
+            font-size: 2.6rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .welcome-section h1 span {
+            color: #ff1e27;
+        }
+
+        .tagline {
+            color: #ffffff;
+            font-style: italic;
+            font-size: 1.4rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0px #ff1e27;
+        }
+
+        .welcome-section p {
+            color: #aaaaaa;
+            font-size: 1.1rem;
+            max-width: 630px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            border: 1px solid #2d2d2d;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #ff1e27;
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            color: #888888;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff1e27;
+            color: white;
+            padding: 8px 18px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: background 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #cc141b;
+        }
+
+        .footer-banner {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #888888;
+            border-top: 1px solid #2d2d2d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <h1>Welcome to <span>Bite Combat</span></h1>
+        <div class="tagline">"Come take a bite"</div>
+        <p>A collection of premium custom mouthguards, heavy-duty gloves, bags, and protective gear engineered for elite fighters.</p>
+    </section>
+
+    <!-- Grid Menu Utama -->
+    <section class="grid-container">
+        <!-- Kartu 1 -->
+        <div class="card">
+            <h3>DISCLAIMER</h3>
+            <p>Situs ini dibuat untuk memenuhi tugas sekolah Informatika, bukan situs resmi.</p>
+            <a href="sources.html" class="btn">Cek Sumber</a>
+        </div>
+
+        <!-- Kartu 2: TERHUBUNG KE HALAMAN PRODUK -->
+        <div class="card">
+            <h3>VIEW SHOP</h3>
+            <p>Check out our latest curated section of professional gloves and training equipment.</p>
+            <a href="products2.html" class="btn">View Products</a>
+        </div>
+
+        <!-- Kartu 3 -->
+        <div class="card">
+            <h3>CONTACT US</h3>
+            <p>Have questions? We have answers. Click the button below to get our contacts.</p>
+            <a href="kontak.html" class="btn">Send A Message</a>
+        </div>
+    </section>
+</body>
+</html>

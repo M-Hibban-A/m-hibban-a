@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bite Combat - Products</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        /* Header Produk */
+        .products-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            border-left: 5px solid #ff1e27;
+        }
+
+        .products-header h1 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .products-header h1 span {
+            color: #ff1e27;
+        }
+
+        /* Grid Katalog 6 Produk */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background-color: #1e1e1e;
+            border: 1px solid #2d2d2d;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+
+        .product-card:hover {
+            border-color: #ff1e27;
+            transform: translateY(-2px);
+        }
+
+        .product-image-container {
+            height: 220px;
+            background-color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 15px;
+            border-bottom: 1px solid #2d2d2d;
+        }
+
+        .product-img {
+            width: 200px;
+            height: 200px;
+            object-fit: fill;
+			display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .product-card:hover .product-img {
+            transform: scale(1.06);
+        }
+
+        .product-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex-grow: 1;
+        }
+
+        .product-info h3 {
+            font-size: 1.15rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+        }
+
+        .product-price {
+            color: #ff1e27;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .product-info p {
+            color: #888888;
+            font-size: 0.88rem;
+            line-height: 1.5;
+        }
+
+        /* Tombol Aksi */
+        .btn {
+            display: inline-block;
+            background-color: #ff1e27;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            text-align: center;
+            transition: background 0.2s;
+            margin-top: auto; /* Memaksa tombol selalu sejajar di bawah */
+        }
+
+        .btn:hover {
+            background-color: #cc141b;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            padding: 8px 15px;
+            margin-top: 0;
+        }
+
+        .btn-outline:hover {
+            background-color: #ffffff;
+            color: #121212;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Atas -->
+    <header class="products-header">
+        <h1>Battle <span>Gear</span></h1>
+        <a href="home.html" class="btn btn-outline">⬅ Back to Home</a>
+    </header>
+
+    <!-- Grid 6 Tempat Produk -->
+    <main class="products-grid">
+        
+        <!-- Slot 1: Menggunakan Gambar Asli Anda -->
+        <div class="product-card">
+            <div class="product-image-container">
+                <img src="sting comp.jpg" alt="Sting Red Pro Gloves" class="product-img">
+            </div>
+            <div class="product-info">
+                <h3>STING Competition Full Set</h3>
+                <div class="product-price">Rp2.749.999</div>
+                <p>Official Sactioned Amateur Competition Gear</p>
+                <a href="https://www.geezersboxing.co.uk/sting-competition-approved-boxing-set" target="_blank" class="btn">ORDER NOW</a>
+            </div>
+        </div>
+
+        <!-- Slot 2: Placeholder Mouthguard -->
+        <div class="product-card">
+            <div class="product-image-container">
+                <img src="apexx.jpg" alt="Apex Mouthguard" class="product-img">
+            </div>
+            <div class="product-info">
+                <h3>Apex Custom Mouthguard</h3>
+                <div class="product-price">Rp450.000</div>
+                <p>Dental-grade protection personalized to fit your exact dental profile perfectly.</p>
+                <a href="https://apex-mouthguards-2.myshopify.com/products/custom-design?variant=60232989475150" target="_blank" class="btn">ORDER CUSTOM</a>
+            </div>
+        </div>
+
+        <!-- Slot 3: Placeholder Heavy Bag -->
+        <div class="product-card">
+            <div class="product-image-container">
+                <img src="heavybag.webp" alt="Titan Heavy Bag" class="product-img">
+            </div>
+            <div class="product-info">
+                <h3>CLETO REYES HEAVY BAG</h3>
+                <div class="product-price">Rp4,840.000 to 5,640.700 IDR.</div>
+                <p>Industrial strength leather built to absorb your heaviest strikes during training.</p>
+                <a href="https://cletoreyesboxing.com/product/cleto-reyes-heavy-bag/" target=_"blank" class="btn">ORDER NOW</a>
+            </div>
+        </div>
+
+        <!-- Slot 4: Placement Tambahan -->
+        <div class="product-card">
+            <div class="product-image-container">
+                <img src="Winning Easy Handwraps.webp" alt="Elite Handwraps" class="product-img">
+            </div>
+            <div class="product-info">
+                <h3>WINNING EASY HANDWRAPS</h3>
+                <div class="product-price">Rp880.000</div>
+                <p>Winning® Boxing Easy Handwraps.</p>
+                <a href="https://www.wjapanboxing.com/products/winning-easy-handwraps" target="_blank" class="btn">ORDER NOW</a>
+            </div>
+        </div>
+
+        <!-- Slot 5: Placement Tambahan -->
+        <div class="product-card">
+            <div class="product-image-container">
+                <img src="bukti.jpg" alt="Sting Black Gloves" class="product-img">
+            </div>
+            <div class="product-info">
+                <h3>Bukti Kepemahaman Img Src</h3>
+                <div class="product-price">Rp000.000 (PRICELESS)</div>
+                <p>mantap</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdk-xj2dVxYofQiY0uYFibcN5gxpEO-MW6hI6sW0C8Wi9ECw/viewform?usp=dialog" target=_"blank" class="btn">ORDER NOW</a>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
